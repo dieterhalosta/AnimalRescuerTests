@@ -5,4 +5,9 @@ public class Vet extends Human{
     double price;
     boolean availability;
     int experience;
+
+
+    public Vet(String name) {
+        super(name);
+    }
 }

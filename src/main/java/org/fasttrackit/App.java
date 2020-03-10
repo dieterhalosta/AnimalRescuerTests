@@ -15,8 +15,7 @@ public class App
         System.out.println( "Welcome to the AnimalRescuer!" );
         System.out.println("----------------------------------");
 
-        Rescuer rescuer = new Rescuer();
-        rescuer.name = "Adi";
+        Rescuer rescuer = new Rescuer("Adi");
         rescuer.budget = 300.12;
         rescuer.age = 22;
         rescuer.gender = "Male";
@@ -44,8 +43,8 @@ public class App
         animal.favoriteFood = food1;
         animal.favoriteActivity = playTime1;
 
-        Vet vet1 = new Vet();
-        vet1.name = "Geo";
+        Vet vet1 = new Vet("Geo");
+
         vet1.specialization = "Dogs";
         vet1.price = 80.2;
         vet1.availability = true;
@@ -56,6 +55,8 @@ public class App
         game1.animal = animal;
         game1.rescuer = rescuer;
         game1.vet = vet1;
+        System.out.println("Name of player is: " + rescuer.getName());
+        System.out.println("Name of Vet is: " + vet1.getName());
 
     }
 }
