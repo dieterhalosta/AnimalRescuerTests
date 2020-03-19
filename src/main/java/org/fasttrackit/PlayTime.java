@@ -1,6 +1,15 @@
 package org.fasttrackit;
 
 public class PlayTime {
-    String name;
+    private String name;
     double duration;
+    Toys toys;
+
+    public String getName() {
+        return name;
+    }
+
+    public PlayTime(String name) {
+        this.name = name;
+    }
 }

@@ -6,6 +6,21 @@ public class Animal {
     int healthLevel;
     int hungerLevel;
     int happinessLevel;
-    Food favoriteFood;
-    PlayTime favoriteActivity;
+    String favoriteFood;
+    String favoriteActivity;
+
+    public Animal(String favoriteFood) {
+        this.favoriteFood = favoriteFood;
+    }
+
+
+    public String getFavoriteFood() {
+        return favoriteFood;
+    }
+
+    public String getFavoriteActivity() {
+        return favoriteActivity;
+    }
+
+
 }
