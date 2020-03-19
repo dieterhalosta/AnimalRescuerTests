@@ -1,6 +1,10 @@
 package org.fasttrackit;
 
-public class PetClinic extends Places{
+public class PetClinic {
+    String name;
+    String place;
     boolean open;
     Vet vet;
+
+
 }

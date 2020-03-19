@@ -14,4 +14,5 @@ public class Supplies {
     public String getName() {
         return name;
     }
+
 }

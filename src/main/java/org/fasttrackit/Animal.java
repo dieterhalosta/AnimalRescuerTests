@@ -1,7 +1,7 @@
 package org.fasttrackit;
 
 public class Animal {
-    String name;
+    private String name;
     int age;
     int healthLevel;
     int hungerLevel;
@@ -9,9 +9,14 @@ public class Animal {
     String favoriteFood;
     String favoriteActivity;
 
-    public Animal(String favoriteFood) {
-        this.favoriteFood = favoriteFood;
+    public Animal(String name) {
+        this.name = name;
     }
+
+    public String getName() {
+        return name;
+    }
+
 
 
     public String getFavoriteFood() {
@@ -21,6 +26,4 @@ public class Animal {
     public String getFavoriteActivity() {
         return favoriteActivity;
     }
-
-
 }
